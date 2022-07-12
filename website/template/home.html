@@ -1,0 +1,12 @@
+{% extends 'template.html' %} 
+
+{% block content %}
+<title>
+    Home
+</title>
+<link rel="stylesheet" href="{{url_for('static',filename='home.css')}}">
+<form method="post">
+    <input type="text" name="link" placeholder="https://www.youtube.com/watch?v="><br>
+    <input type="submit" id="enviar">
+</form>
+{% endblock %}
